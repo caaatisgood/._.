@@ -1,0 +1,28 @@
+{
+  "name": "vt-comment-crawler",
+  "version": "0.0.1",
+  "description": "`._.`",
+  "main": "index.js",
+  "scripts": {
+    ".": "echo ._.",
+    "dev": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/imrobinized/._..git"
+  },
+  "author": "Robin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/imrobinized/._./issues"
+  },
+  "homepage": "https://github.com/imrobinized/._.#readme",
+  "dependencies": {
+    "restify": "^4.3.0"
+  },
+  "devDependencies": {
+    "babel-plugin-transform-object-rest-spread": "^6.23.0",
+    "babel-preset-latest": "^6.22.0",
+    "babel-register": "^6.23.0"
+  }
+}
