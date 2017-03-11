@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     ".": "echo ._.",
-    "dev": "node index.js"
+    "dev": "./node_modules/.bin/nodemon index.js"
   },
   "repository": {
     "type": "git",
@@ -18,11 +18,13 @@
   },
   "homepage": "https://github.com/imrobinized/._.#readme",
   "dependencies": {
+    "request": "^2.81.0",
     "restify": "^4.3.0"
   },
   "devDependencies": {
     "babel-plugin-transform-object-rest-spread": "^6.23.0",
     "babel-preset-latest": "^6.22.0",
-    "babel-register": "^6.23.0"
+    "babel-register": "^6.23.0",
+    "nodemon": "^1.11.0"
   }
 }
