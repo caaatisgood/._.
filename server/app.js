@@ -18,12 +18,19 @@ const CHALLENGE_PAGE_ENDPOINT = 'https://tw.voicetube.com/everyday/'
 console.log(CHALLENGE_PAGE_ENDPOINT + date)
 
 request
-  .get(CHALLENGE_PAGE_ENDPOINT + date)
-  .on('response', response => {
-    console.log(response.statusCode)
+  .get({
+    url: CHALLENGE_PAGE_ENDPOINT + date,
+    gzip: true,
+    headers: {
+      'cache-control': 'no-cache',
+      'Accept': '*/*',
+      'Accept-Encoding': 'gzip, deflate, br',
+      'User-Agent': 'yee'
+    }
+  })
+  .on('data', data => {
+    console.log('decoded chunk: ' + data)
   })
   .on('error', err => {
     console.log(err)
   })
-
-// 403??
