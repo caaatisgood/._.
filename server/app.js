@@ -29,7 +29,18 @@ request
     }
   })
   .on('data', data => {
-    console.log('decoded chunk: ' + data)
+    let line = data.toString()
+    const startStr = 'core/zhTW/spkChallenges/'
+    const start = line.indexOf(startStr)
+    if (start > -1) {
+      line = line.substring(start, line.length)
+      const endStr = '/comments'
+      const end = line.indexOf(endStr)
+      if (end > -1) {
+        console.log('daily challenge id found ->', line.substring(startStr.length, end))
+        // POST the comments back!
+      }
+    }
   })
   .on('error', err => {
     console.log(err)
