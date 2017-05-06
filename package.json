@@ -19,7 +19,9 @@
   "homepage": "https://github.com/imrobinized/._.#readme",
   "dependencies": {
     "request": "^2.81.0",
-    "restify": "^4.3.0"
+    "request-promise": "^4.2.0",
+    "restify": "^4.3.0",
+    "restify-plugins": "^1.5.1"
   },
   "devDependencies": {
     "babel-plugin-transform-object-rest-spread": "^6.23.0",
